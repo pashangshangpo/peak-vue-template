@@ -36,7 +36,14 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(js)$/,
+        test: /\.vue$/,
+        exclude: /(node_modules|bower_components)/,
+        use: [
+          'vue-loader'
+        ]
+      },
+      {
+        test: /\.js$/,
         exclude: /(node_modules|bower_components)/,
         use: [
           'babel-loader'
