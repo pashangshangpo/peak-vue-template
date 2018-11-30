@@ -23,5 +23,5 @@ Init().then(() => {
     router: Router,
     store: Store,
     render: h => h(App),
-  }).$mount('#app')
+  }).$mount(document.body.appendChild(document.createElement('div')))
 })
