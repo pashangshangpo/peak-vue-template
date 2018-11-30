@@ -20,7 +20,7 @@ module.exports = {
     publicPath: ''
   },
   resolve: {
-    extensions: ['.js'],
+    extensions: ['.js', '.vue', '.scss'],
     alias: {
       '$api': resolve('src/api'),
       '$common': resolve('src/common'),
