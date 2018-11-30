@@ -9,14 +9,14 @@ const Init = () => {
 }
 
 Init().then(() => {
-  const App = require('./App')
+  const App = require('./App').default
   const Store = require('$store').default
   const Route = require('./Route').default
 
   require('./style/reset.scss')
 
   const Router = new VueRouter({
-    Route,
+    routes: Route,
   })
 
   new Vue({

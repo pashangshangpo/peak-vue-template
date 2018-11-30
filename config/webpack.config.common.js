@@ -5,6 +5,7 @@
  */
 
 const path = require('path')
+const VueLoaderPlugin = require('vue-loader/lib/plugin')
 
 const resolve = (...arg) => {
   return path.resolve('.', ...arg)
@@ -76,5 +77,6 @@ module.exports = {
     ]
   },
   plugins: [
+    new VueLoaderPlugin()
   ]
 }
