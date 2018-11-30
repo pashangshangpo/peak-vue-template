@@ -16,12 +16,12 @@ Init().then(() => {
   require('./style/reset.scss')
 
   const Router = new VueRouter({
-    Route
+    Route,
   })
 
   new Vue({
     router: Router,
     store: Store,
-    render: h => h(App)
+    render: h => h(App),
   }).$mount('#app')
 })

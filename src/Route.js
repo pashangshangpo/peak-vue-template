@@ -4,6 +4,6 @@ export default [
   {
     path: '/',
     component: Home,
-    name: 'home'
-  }
+    name: 'home',
+  },
 ]
