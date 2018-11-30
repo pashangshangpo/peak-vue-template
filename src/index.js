@@ -13,7 +13,7 @@ Init().then(() => {
   const Store = require('$store').default
   const Route = require('./Route').default
 
-  require('./style/reset.scss')
+  require('./style/reset')
 
   const Router = new VueRouter({
     routes: Route,
